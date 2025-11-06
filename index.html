@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>愛してます</title>
+    <link rel="stylesheet" href="CSS/styles.css"> 
+    <link rel="icon" href="IMAGE/simbolo.ico" type="image/x-icon">
+    <meta property="og:title" content="ANTES QUE SE ACABE - Bad Bunny">
+    <meta property="og:description" content="Reproductor de música con letras sincronizadas.">
+    <meta property="og:image" content="IMAGE/ANTESDEQUESEACABE.png">
+    <meta property="og:type" content="music.song">
+</head>
+<body>
+    <video id="background-video" loop muted playsinline>
+        <source src="IMAGE/ANTESDEQIE.mp4" type="video/mp4">
+    </video>
+
+    <div class="player-container">
+        <div class="track-info">
+            <img src="IMAGE/ANTESDEQUESEACABE.png" alt="Portada"> 
+            <div> 
+                <h2>ANTES QUE SE ACABE</h2> 
+                <h3>Bad Bunny</h3> 
+            </div>
+        </div>
+        <audio id="audio" src="AUDIO/ANTESDEQUESEACABE.mp3"></audio> 
+        <div class="progress-bar">
+            <span class="current-time">0:00</span> 
+            <input type="range" min="0" max="100" value="0">
+            <span class="remaining-time">-0:00</span>
+        </div>
+        <div class="controls">
+            <button>⏮</button>
+            <button id="playButton">⏯</button>
+            <button>⏭</button>
+        </div>
+    </div>
+    
+    <div id="lyrics-container"></div>
+
+    <script src="JS/massage.js"></script>
+</body>
+</html>
